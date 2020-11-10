@@ -17,5 +17,17 @@ class Bus:
     def drop_off(self, passenger):
         self.passengers.remove(passenger)
     
-    #if bus reaches destination then remove all passengers
-    
+    def empty(self):
+        self.passengers.clear()
+
+    def pick_up_from_stop(self, bus_stop):
+        for passenger in bus_stop.queue:
+            self.pick_up(passenger)
+        
+        
+        
+      
+        
+
+
+        
